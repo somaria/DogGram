@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84393D7E26E758C300CC5A3B /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393D7D26E758C300CC5A3B /* PostModel.swift */; };
+		84393D8026E7778200CC5A3B /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393D7F26E7778200CC5A3B /* PostArrayObject.swift */; };
+		84393D8226E7832F00CC5A3B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393D8126E7832F00CC5A3B /* CommentsView.swift */; };
 		844E2EE626E6261F0052946F /* DogGramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E2EE526E6261F0052946F /* DogGramApp.swift */; };
 		844E2EE826E6261F0052946F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E2EE726E6261F0052946F /* ContentView.swift */; };
 		844E2EEA26E626210052946F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844E2EE926E626210052946F /* Assets.xcassets */; };
 		844E2EED26E626210052946F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844E2EEC26E626210052946F /* Preview Assets.xcassets */; };
+		84598FE626E636E600550A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84598FE526E636E600550A09 /* LaunchScreen.storyboard */; };
+		84598FEC26E641C900550A09 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84598FEB26E641C900550A09 /* Extensions.swift */; };
+		84598FEE26E6476D00550A09 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84598FED26E6476D00550A09 /* FeedView.swift */; };
+		84598FF026E6571900550A09 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84598FEF26E6571900550A09 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84393D7D26E758C300CC5A3B /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		84393D7F26E7778200CC5A3B /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
+		84393D8126E7832F00CC5A3B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		844E2EE226E6261F0052946F /* DogGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E2EE526E6261F0052946F /* DogGramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogGramApp.swift; sourceTree = "<group>"; };
 		844E2EE726E6261F0052946F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		844E2EE926E626210052946F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844E2EEC26E626210052946F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84598FE526E636E600550A09 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84598FEB26E641C900550A09 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84598FED26E6476D00550A09 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		84598FEF26E6571900550A09 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84393D7C26E758A900CC5A3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84393D7D26E758C300CC5A3B /* PostModel.swift */,
+				84393D7F26E7778200CC5A3B /* PostArrayObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		844E2ED926E6261F0052946F = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +74,12 @@
 		844E2EE426E6261F0052946F /* DogGram */ = {
 			isa = PBXGroup;
 			children = (
-				844E2EE526E6261F0052946F /* DogGramApp.swift */,
-				844E2EE726E6261F0052946F /* ContentView.swift */,
+				84393D7C26E758A900CC5A3B /* Model */,
+				84598FEA26E6419700550A09 /* Helpers */,
+				84598FE726E6396200550A09 /* Views */,
 				844E2EE926E626210052946F /* Assets.xcassets */,
 				844E2EEB26E626210052946F /* Preview Content */,
+				84598FE526E636E600550A09 /* LaunchScreen.storyboard */,
 			);
 			path = DogGram;
 			sourceTree = "<group>";
@@ -65,6 +90,42 @@
 				844E2EEC26E626210052946F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84598FE726E6396200550A09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84598FE926E6398A00550A09 /* Subview */,
+				84598FE826E6397E00550A09 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84598FE826E6397E00550A09 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				844E2EE526E6261F0052946F /* DogGramApp.swift */,
+				844E2EE726E6261F0052946F /* ContentView.swift */,
+				84598FED26E6476D00550A09 /* FeedView.swift */,
+				84393D8126E7832F00CC5A3B /* CommentsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		84598FE926E6398A00550A09 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				84598FEF26E6571900550A09 /* PostView.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		84598FEA26E6419700550A09 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84598FEB26E641C900550A09 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84598FE626E636E600550A09 /* LaunchScreen.storyboard in Resources */,
 				844E2EED26E626210052946F /* Preview Assets.xcassets in Resources */,
 				844E2EEA26E626210052946F /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84598FEE26E6476D00550A09 /* FeedView.swift in Sources */,
+				84393D7E26E758C300CC5A3B /* PostModel.swift in Sources */,
 				844E2EE826E6261F0052946F /* ContentView.swift in Sources */,
+				84598FEC26E641C900550A09 /* Extensions.swift in Sources */,
+				84393D8026E7778200CC5A3B /* PostArrayObject.swift in Sources */,
+				84598FF026E6571900550A09 /* PostView.swift in Sources */,
+				84393D8226E7832F00CC5A3B /* CommentsView.swift in Sources */,
 				844E2EE626E6261F0052946F /* DogGramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DogGram/Preview Content\"";
@@ -275,6 +344,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -287,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DogGram/Preview Content\"";
@@ -305,6 +377,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -317,7 +391,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
